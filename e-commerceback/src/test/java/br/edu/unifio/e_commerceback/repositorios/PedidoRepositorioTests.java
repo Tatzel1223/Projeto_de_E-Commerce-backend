@@ -1,5 +1,23 @@
 package br.edu.unifio.e_commerceback.repositorios;
 
-public class PedidoRepositorioTests {
+import static org.junit.jupiter.api.Assertions.assertEquals;
+import static org.junit.jupiter.api.Assertions.assertNotNull;
 
+import org.junit.jupiter.api.Test;
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.boot.test.context.SpringBootTest;
+
+import br.edu.unifio.e_commerceback.entidades.Pedido;
+
+@SpringBootTest 
+public class PedidoRepositorioTests {
+    @Autowired 
+    private PedidoRepositorio pedidoRepositorio;
+
+    @Test 
+    public void deveBuscarPedidoPorId () {
+    Pedido pedido = pedidoRepositorio.findById(4).orElseThrow();
+    assertNotNull(pedido);
+    assertEquals("PAGO", pedido.getStatus());
+    }
 }

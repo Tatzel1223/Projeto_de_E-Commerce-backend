@@ -12,12 +12,11 @@ import br.edu.unifio.e_commerceback.entidades.Cliente;
 @SpringBootTest 
 public class ClienteRepositorioTests {
     @Autowired 
-
-    private ClienteRepositorioTests clienteRepositorioTests;
+    private ClienteRepositorios clienteRepositorio;
 
     @Test 
     public void deveBuscarUmClientePorId () {
-        Cliente cliente = clienteRepositorioTests.findById(Integer.parseInt("3")).orElseThrow();
+        Cliente cliente = clienteRepositorio.findById(1).orElseThrow();
         assertNotNull(cliente);
         assertEquals("João Silva", cliente.getNome());
     }
