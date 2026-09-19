@@ -76,4 +76,16 @@ public class ProdutoRepositorioTests {
         assertTrue(produtoRepositorio.existsById(produto.getId()));
         assertEquals("Nome Teste", produtoRepositorio.findById(produto.getId()).orElseThrow().getNome());
     } 
+    @Test
+    public void deveAlterarUmProduto() {
+    Produto produto = produtoRepositorio.findById(1).orElseThrow();
+    produto.setNome("Produto Alterado");
+    produto.setPreco(new BigDecimal("99.90"));
+        
+    produtoRepositorio.save(produto);
+
+    Produto produtoAtualizado = produtoRepositorio.findById(1).orElseThrow();
+    assertEquals("Produto Alterado", produtoAtualizado.getNome());
+    assertEquals(new BigDecimal("99.90"), produtoAtualizado.getPreco());
+    }
 }
