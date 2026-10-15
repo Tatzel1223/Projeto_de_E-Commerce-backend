@@ -16,9 +16,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;
 import org.springframework.data.domain.Sort;
 
-import br.edu.unifio.e_commerceback.entidades.Cliente;
 import br.edu.unifio.e_commerceback.entidades.Pagamento;
-import br.edu.unifio.e_commerceback.entidades.Pedido;
 
 @SpringBootTest 
 @TestMethodOrder (MethodOrderer.OrderAnnotation.class)

@@ -4,8 +4,6 @@ import static org.junit.jupiter.api.Assertions.assertEquals;
 import static org.junit.jupiter.api.Assertions.assertFalse;
 import static org.junit.jupiter.api.Assertions.assertNotNull;
 import static org.junit.jupiter.api.Assertions.assertTrue;
-import static org.mockito.ArgumentMatchers.doubleThat;
-
 import java.math.BigDecimal;
 import java.util.List;
 
@@ -19,8 +17,6 @@ import org.springframework.data.domain.Sort;
 
 
 import br.edu.unifio.e_commerceback.entidades.ItemPedido;
-import br.edu.unifio.e_commerceback.entidades.Pedido;
-import br.edu.unifio.e_commerceback.entidades.Produto;
 
 @SpringBootTest 
 @TestMethodOrder (MethodOrderer.OrderAnnotation.class)

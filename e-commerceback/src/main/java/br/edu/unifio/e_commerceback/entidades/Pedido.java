@@ -3,7 +3,6 @@ package br.edu.unifio.e_commerceback.entidades;
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
 
-import br.edu.unifio.e_commerceback.repositorios.ClienteRepositorios;
 import jakarta.persistence.Entity;
 import jakarta.persistence.GeneratedValue;
 import jakarta.persistence.GenerationType;
