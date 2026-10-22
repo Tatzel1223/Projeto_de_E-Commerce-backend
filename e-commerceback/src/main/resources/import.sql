@@ -9,6 +9,7 @@ insert into produto (nome, descricao, preco, estoque, categoria_id) values ('Fon
 insert into produto (nome, descricao, preco, estoque, categoria_id) values ('Cadeira de Escritório', 'Cadeira de Escritório preta', 34, 36, 4);
 insert into produto (nome, descricao, preco, estoque, categoria_id) values ('Chave Inglesa', 'Chave inglesa', 14, 76, 5);
 insert into produto (nome, descricao, preco, estoque, categoria_id) values ('Frigideira', 'Frigideira futon', 25.39, 46, 4);
+insert into produto (nome, descricao, preco, estoque, categoria_id) values ('ProdutoSeis', 'ProdutoExemplo', 20.00, 20, NULL)
 
 insert into cliente (nome, email, telefone) values ('João Silva', 'joao.silva@email.com', '14998123456');
 insert into cliente (nome, email, telefone) values ('Maria Oliveira', 'maria.oliveira@email.com', '14998234567');
